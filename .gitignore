@@ -1,0 +1,12 @@
+
+.DS_Store
+Demo/.DS_Store
+Demo/apigateway/.DS_Store
+Demo/apigateway/.mvn/wrapper/maven-wrapper.jar
+Demo/apigateway/.mvn/wrapper/maven-wrapper.properties
+Demo/apigateway/.mvn/wrapper/MavenWrapperDownloader.java
+Demo/customer/.DS_Store
+Demo/Kubernetes/.DS_Store
+Demo/Kubernetes/customer/.DS_Store
+Demo/product/.DS_Store
+Demo/apigateway/.mvn/wrapper/maven-wrapper.jar
