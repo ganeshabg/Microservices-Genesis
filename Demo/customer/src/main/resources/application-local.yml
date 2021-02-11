@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: customer
+
+server:
+  port: 7070
+
+product:
+  service:
+    name: product
+    url: http://localhost:6060/products

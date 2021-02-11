@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: order
+
+server:
+  port: 7070
+
+product:
+  service:
+    name: product
+    url: http://product:7070/products

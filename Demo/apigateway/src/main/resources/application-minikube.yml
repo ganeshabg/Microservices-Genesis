@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: apigateway
+  cloud:
+    gateway:
+      routes:
+        - id: customer_route
+          uri: http://customer:7070/
+          predicates:
+            - Path=/customer/**
+        - id: order_route
+          uri: http://order:7070/
+          predicates:
+            - Path=/order/**
+        - id: prouct_route
+          uri: http://product:7070/
+          predicates:
+            - Path=/products/**
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  port: 7070

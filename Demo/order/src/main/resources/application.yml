@@ -1,0 +1,27 @@
+spring:
+  rabbitmq:
+    host: 192.168.99.101
+    port: 31730
+    username: dev
+    password: dev
+
+  datasource:
+    url: jdbc:mysql://192.168.99.101:30002/order_schema
+    username: root
+    password: password
+    jpa:
+      hibernate:
+        ddl-auto: none
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+order:
+  exchange: order-exchange
+  queue: order-queue
+  routingkey: order
